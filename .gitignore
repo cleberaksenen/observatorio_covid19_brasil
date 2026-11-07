@@ -1,0 +1,30 @@
+# Dados e arquivos compactados
+*.parquet
+*.csv
+*.dbf
+*.dbc
+*.zip
+*.7z
+*.gz
+
+# Dados tratados e arquivos temporários
+Camada_Silver/dados/
+**/brutos/
+**/temporarios/
+**/backup_recuperacao/
+
+# Ambiente e credenciais
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Bancos locais de auditoria
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal

@@ -1,0 +1,82 @@
+{
+  "status": "ERRO",
+  "execucao": "20261029_023327_ff363219",
+  "registros": 0,
+  "por_ano_arquivo": {},
+  "por_ano_obito": {
+    "2020": 250000
+  },
+  "avisos": {
+    "fl_obito_ano_diferente_arquivo": 0,
+    "fl_nascimento_apos_obito": 0,
+    "contador_ausente": 0
+  },
+  "vinculos": {
+    "residencia": {
+      "VINCULADO_COM_POPULACAO": 249675,
+      "SEM_CORRESPONDENCIA": 325
+    },
+    "ocorrencia": {
+      "VINCULADO_COM_POPULACAO": 249998,
+      "SEM_CORRESPONDENCIA": 2
+    }
+  },
+  "datas": {
+    "obito": {
+      "VALIDA": 250000
+    },
+    "nascimento": {
+      "VALIDA": 249435,
+      "AUSENTE": 565
+    }
+  },
+  "entradas": [],
+  "referencia_ibge": "D:\\Cleber\\GitHub\\Projetos\\observatorio_covid19_brasil\\Camada_Silver\\dados\\populacao_ibge\\20261024_163052_e1db3d2b\\populacao_municipios_2020_2024.parquet",
+  "sha256_ibge": "48a793c5f53a2664729a4a676ea0a1042c23796610b1911595b7c8a782c3b223",
+  "colunas_originais_uniao": 92,
+  "colunas_silver": 112,
+  "colunas_ausentes_por_ano": {
+    "2020": [
+      "cb_alt",
+      "covid_clas",
+      "mat_clas",
+      "opor_do",
+      "tp_altera"
+    ],
+    "2021": [
+      "cb_alt",
+      "covid_clas",
+      "mat_clas",
+      "opor_do",
+      "tp_altera"
+    ],
+    "2022": [
+      "cb_alt",
+      "covid_clas",
+      "mat_clas",
+      "opor_do",
+      "tp_altera"
+    ],
+    "2023": [
+      "covid_clas",
+      "estabdescr",
+      "fontesinf",
+      "mat_clas",
+      "nudiasinf",
+      "nudiasobin"
+    ],
+    "2024": [
+      "estabdescr",
+      "fontesinf",
+      "nudiasinf",
+      "nudiasobin"
+    ]
+  },
+  "chave_tecnica": [
+    "ano_arquivo",
+    "contador"
+  ],
+  "parquet_silver": "D:\\Cleber\\GitHub\\Projetos\\observatorio_covid19_brasil\\Camada_Silver\\dados\\sim\\20261029_023327_ff363219\\sim_2020_2024.parquet",
+  "limites": "Sem deduplicação ou filtro clínico; contador não é identificador permanente. Idade e causas não decodificadas; somente datas de óbito/nascimento derivadas. Vínculos exatos, sem equivalências automáticas.",
+  "erro": "Something has gone wrong, please report a bug at https://github.com/pandas-dev/pandas/issues"
+}

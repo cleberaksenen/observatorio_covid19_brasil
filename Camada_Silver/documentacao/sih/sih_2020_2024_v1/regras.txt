@@ -1,0 +1,12 @@
+Todos os originais preservados como texto; nenhuma deduplicacao ou filtro clinico.
+Chave tecnica: arquivo_origem + linha_arquivo (1-based). N_AIH nao e chave unica.
+Vinculo IBGE exato pelos seis primeiros digitos do codigo oficial, usando ano_processamento.
+Municipios sem match ficam nulos; sem equivalencias automaticas.
+Datas YYYYMMDD entre 1800-01-01 e 2100-12-31; originais preservados.
+Valores VAL_* em decimal(18,2), sem arredondar entradas com mais de duas casas.
+IDADE_numerico mantem unidade indicada por COD_IDADE; nao representa necessariamente anos.
+US_TOT permanece texto. Nenhuma conversao cambial.
+Flags cronologicas false com datas ausentes: consultar tambem status das datas.
+Sem vinculo direto a CNES leitos: essa base nao contem necessariamente todos os estabelecimentos SIH.
+Relatorio exige revisao, mesmo com conversao concluida.
+Fonte semantica: https://wiki.saude.gov.br/sih/index.php/P%C3%A1gina_principal

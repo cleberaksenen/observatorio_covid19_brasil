@@ -1,0 +1,81 @@
+{
+  "status": "REVISAR_ANTES_DA_CARGA",
+  "execucao": "20261028_221726_e806e90f",
+  "registros": 4060608,
+  "por_ano_arquivo": {
+    "2020": 1206920,
+    "2021": 1745672,
+    "2022": 560577,
+    "2023": 279453,
+    "2024": 267986
+  },
+  "avisos": {
+    "formato_codigo_invalido_CLASSI_FIN": 0,
+    "formato_codigo_invalido_EVOLUCAO": 0,
+    "formato_codigo_invalido_PCR_SARS2": 0,
+    "formato_codigo_invalido_AN_SARS2": 0,
+    "fl_ano_sintomas_diferente_arquivo": 19314,
+    "fl_notificacao_antes_sintomas": 0,
+    "ano_analise_fora_referencia": 144,
+    "numero_notificacao_ausente": 0,
+    "uf_ausente_notificacao": 10542,
+    "uf_ausente_residencia": 645,
+    "uf_ausente_internacao": 463960
+  },
+  "vinculos": {
+    "notificacao": {
+      "VINCULADO_COM_POPULACAO": 4049922,
+      "CODIGO_AUSENTE": 10542,
+      "ANO_FORA_REFERENCIA": 144
+    },
+    "residencia": {
+      "VINCULADO_COM_POPULACAO": 3973099,
+      "SEM_CORRESPONDENCIA": 86720,
+      "CODIGO_AUSENTE": 645,
+      "ANO_FORA_REFERENCIA": 144
+    },
+    "internacao": {
+      "VINCULADO_COM_POPULACAO": 3596506,
+      "CODIGO_AUSENTE": 463958,
+      "ANO_FORA_REFERENCIA": 144
+    }
+  },
+  "referencia_ibge": "D:\\Cleber\\GitHub\\Projetos\\observatorio_covid19_brasil\\Camada_Silver\\dados\\populacao_ibge\\20261024_163052_e1db3d2b\\populacao_municipios_2020_2024.parquet",
+  "sha256_ibge": "48a793c5f53a2664729a4a676ea0a1042c23796610b1911595b7c8a782c3b223",
+  "entradas": [
+    {
+      "arquivo": "D:\\Cleber\\GitHub\\Projetos\\observatorio_covid19_brasil\\Camada_Bronze\\dados_srag\\srag_2020.parquet",
+      "sha256": "371723b91c0e4de1ae4067c8a6ee04887430869fa8d3c561d4b9106fb89e0c0b",
+      "registros": 1206920
+    },
+    {
+      "arquivo": "D:\\Cleber\\GitHub\\Projetos\\observatorio_covid19_brasil\\Camada_Bronze\\dados_srag\\srag_2021.parquet",
+      "sha256": "ecad01062f23715551a1e5e82fa1d9b28f0ea25e2c486a49518a15bf489ee790",
+      "registros": 1745672
+    },
+    {
+      "arquivo": "D:\\Cleber\\GitHub\\Projetos\\observatorio_covid19_brasil\\Camada_Bronze\\dados_srag\\srag_2022.parquet",
+      "sha256": "93aab4d4ef3ad87250d0179935156329f02a3b6947341654c06c1be26e67b9f1",
+      "registros": 560577
+    },
+    {
+      "arquivo": "D:\\Cleber\\GitHub\\Projetos\\observatorio_covid19_brasil\\Camada_Bronze\\dados_srag\\srag_2023.parquet",
+      "sha256": "3adfca92884f4b213caaf81b1adf83e18416b19842c273a7e20c4ba9c9440070",
+      "registros": 279453
+    },
+    {
+      "arquivo": "D:\\Cleber\\GitHub\\Projetos\\observatorio_covid19_brasil\\Camada_Bronze\\dados_srag\\srag_2024.parquet",
+      "sha256": "015135a33779ce28e2a0c43a83c06b7e76c11144ec47463a54687f8ca5e23f5a",
+      "registros": 267986
+    }
+  ],
+  "chave_proposta": [
+    "ano_arquivo",
+    "nu_notific"
+  ],
+  "regra_ano_analise": "Ano de DT_SIN_PRI, sem fallback",
+  "observacao": "Linhas preservadas. Não equivale a pessoas ou casos únicos; não filtra COVID. Datas originalmente texto não foram interpretadas.",
+  "chaves_duplicadas": 0,
+  "numeros_presentes_em_mais_de_um_arquivo": 0,
+  "parquet_silver": "D:\\Cleber\\GitHub\\Projetos\\observatorio_covid19_brasil\\Camada_Silver\\dados\\srag\\20261028_221726_e806e90f\\srag_2020_2024.parquet"
+}

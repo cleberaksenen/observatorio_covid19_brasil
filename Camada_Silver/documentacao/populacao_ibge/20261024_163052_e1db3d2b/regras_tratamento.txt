@@ -1,0 +1,7 @@
+Grao: municipio de 7 digitos por ano_analise. Duplicatas preservadas e reportadas.
+Codigos 6/7 e UF conferidos entre si; nao equivalem a validacao contra cadastro territorial.
+2023 mantem referencia 2022 e cautela temporal. Fontes, datas e valor original preservados.
+Populacao positiva inteira ou NULL. Valores invalidos vao para quarentena.
+Populacao total nao e denominador especifico por idade/sexo. Agregar eventos antes do cruzamento.
+Usar apenas uma execucao Silver. Nao somar rodadas ou anos como populacao unica.
+VALIDADO_COM_RESSALVAS registra limites metodologicos, sem corrigir a fonte.

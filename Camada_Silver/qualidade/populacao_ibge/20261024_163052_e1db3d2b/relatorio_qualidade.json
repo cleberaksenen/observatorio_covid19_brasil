@@ -1,0 +1,28 @@
+{
+  "status": "VALIDADO_COM_RESSALVAS",
+  "registros_entrada": 27853,
+  "registros_silver": 27853,
+  "registros_quarentena": 0,
+  "registros_em_chaves_duplicadas_7": 0,
+  "registros_em_chaves_duplicadas_6": 0,
+  "anos_ausentes": [],
+  "anos_com_menos_5000_registros": [],
+  "ufs_ausentes_por_ano": {
+    "2020": [],
+    "2021": [],
+    "2022": [],
+    "2023": [],
+    "2024": []
+  },
+  "populacoes_nulas": 3,
+  "motivos_rejeicao": {},
+  "ressalvas": [
+    "2023 utiliza referencia populacional de 2022, conforme metadados do extrator.",
+    "Serie mistura censo e estimativas; diferencas nao equivalem diretamente a crescimento.",
+    "Populacoes ausentes continuam NULL; nao usar como denominador.",
+    "Cobertura verifica anos, UFs e piso de registros; nao certifica lista completa de municipios."
+  ],
+  "colunas_extras_bronze_nao_exportadas": [],
+  "arquivo_entrada": "D:\\Cleber\\GitHub\\Projetos\\observatorio_covid19_brasil\\Camada_Bronze\\dados_ibge\\populacao_municipios_2020_2024.parquet",
+  "parquet_silver": "D:\\Cleber\\GitHub\\Projetos\\observatorio_covid19_brasil\\Camada_Silver\\dados\\populacao_ibge\\20261024_163052_e1db3d2b\\populacao_municipios_2020_2024.parquet"
+}

@@ -1,0 +1,14 @@
+CNES hospitais e leitos: recorte 2020–2024. Grao esperado: estabelecimento (CNES) por competencia mensal.
+Colunas em snake_case; strings aparadas; vazios -> NULL; quantidades inteiras nao negativas.
+CNES numerico de 1 a 7 digitos e completado com zeros; sufixo .0 e retirado quando inteiro.
+Data_competencia representa o primeiro dia do mes, nao a data real de um evento.
+CNES, competencia, UF ou quantidades invalidas: linha completa separada em quarentena.
+SUS maior que existente: alerta, sem corrigir valores ou eliminar a linha automaticamente.
+fl_inconsistencia_leitos: TRUE se leitos_sus > leitos_existentes, FALSE se comparaveis sem divergencia, NULL se alguma quantidade ausente.
+Leitos gerais divergentes permitem VALIDADO_COM_RESSALVAS quando as demais verificacoes passam.
+Essa politica preserva os valores e nao comprova sua exatidao; revisar a contagem em cada execucao.
+Divergencias em UTI, quarentena, duplicatas, meses ausentes ou base vazia continuam exigindo revisao.
+Quantidade ausente continua NULL. Duplicatas por CNES/competencia sao mantidas e reportadas.
+Nao soma leitos entre meses; nao soma UTI total com seus subtipos; nao mede ocupacao.
+O SQL e apenas uma definicao inicial. Nao conecta nem carrega PostgreSQL.
+Cada execucao fica isolada: carregar somente o Parquet da execucao revisada, sem acumular rodadas.

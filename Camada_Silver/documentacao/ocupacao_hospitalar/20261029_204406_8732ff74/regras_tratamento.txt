@@ -1,0 +1,14 @@
+Originais preservados como texto; nenhuma linha removida. _id unico nesta coleta, nao identifica pessoa.
+Datas UTC com fuso explicito; dia/competencia UTC sao referencias tecnicas, nao dia local validado.
+Referencia CNES mensal pelo mes UTC; match exige UF e municipio normalizados compativeis.
+Normalizacao de municipio remove acentos, espacos e pontuacao; sem fuzzy match ou equivalencias manuais.
+CNES candidato separado do vinculado. Codigo longo nao truncado; sem match nao prova cadastro inexistente.
+Municipio IBGE herdado somente do CNES vinculado. Nao ha fallback automatico por nome.
+Quantidades negativas/fracionarias/nao finitas ficam nulas nas derivadas; originais e status preservados.
+Inteiros nao negativos nao sao garantia de plausibilidade; acima do limiar operacional ha flag de revisao.
+Nenhuma soma ou coalesce entre campos de ocupacao suspeita/confirmada/COVID/hospitalar.
+Ausente nao equivale a zero. Excluido preservado; validado=False nao usado como filtro automatico.
+Nao calcular taxas de ocupacao com denominadores CNES sem antes confirmar compatibilidade conceitual.
+Repeticoes hospital/dia UTC sao reportadas somente para CNES vinculado, sem escolher ultima notificacao.
+Contagens por campo/flag podem se sobrepor. Campos de saida nao sao somados com estoques de ocupacao.
+2023/2024 nao localizados nesta coleta; isso nao representa ocupacao zero ou ausencia de fonte oficial.

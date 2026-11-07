@@ -1,0 +1,119 @@
+{
+  "status": "REVISAR_ANTES_DA_CARGA",
+  "execucao": "20261029_023632_bf095088",
+  "registros": 7931364,
+  "por_ano_arquivo": {
+    "2020": 1556824,
+    "2021": 1832649,
+    "2022": 1544266,
+    "2023": 1465610,
+    "2024": 1532015
+  },
+  "por_ano_obito": {
+    "2020": 1556824,
+    "2021": 1832649,
+    "2022": 1544266,
+    "2023": 1465610,
+    "2024": 1532015
+  },
+  "avisos": {
+    "fl_obito_ano_diferente_arquivo": 0,
+    "fl_nascimento_apos_obito": 2,
+    "contador_ausente": 0
+  },
+  "vinculos": {
+    "residencia": {
+      "VINCULADO_COM_POPULACAO": 7919255,
+      "SEM_CORRESPONDENCIA": 12109
+    },
+    "ocorrencia": {
+      "VINCULADO_COM_POPULACAO": 7931270,
+      "SEM_CORRESPONDENCIA": 94
+    }
+  },
+  "datas": {
+    "obito": {
+      "VALIDA": 7931364
+    },
+    "nascimento": {
+      "VALIDA": 7913609,
+      "AUSENTE": 16151,
+      "INVALIDA_OU_FORMATO_NAO_PREVISTO": 1604
+    }
+  },
+  "entradas": [
+    {
+      "arquivo": "D:\\Cleber\\GitHub\\Projetos\\observatorio_covid19_brasil\\Camada_Bronze\\dados_mortalidade_sim\\coleta_20261023_103728_a8cccf84\\parquet\\sim_2020.parquet",
+      "sha256": "b21e5ca4a3f024960f12e95358235a56d925bc1816373553e586732677c16238",
+      "registros": 1556824
+    },
+    {
+      "arquivo": "D:\\Cleber\\GitHub\\Projetos\\observatorio_covid19_brasil\\Camada_Bronze\\dados_mortalidade_sim\\coleta_20261023_103728_a8cccf84\\parquet\\sim_2021.parquet",
+      "sha256": "72ff6737c033544d3d88a1b4869ee26a15a9aeceb21ee49229200579f4d5f72c",
+      "registros": 1832649
+    },
+    {
+      "arquivo": "D:\\Cleber\\GitHub\\Projetos\\observatorio_covid19_brasil\\Camada_Bronze\\dados_mortalidade_sim\\coleta_20261023_103728_a8cccf84\\parquet\\sim_2022.parquet",
+      "sha256": "fba64556c23e3f2649b2451e255c77d93230e6505bcc1c0ad6c7fb5c0d6b5e62",
+      "registros": 1544266
+    },
+    {
+      "arquivo": "D:\\Cleber\\GitHub\\Projetos\\observatorio_covid19_brasil\\Camada_Bronze\\dados_mortalidade_sim\\coleta_20261023_103728_a8cccf84\\parquet\\sim_2023.parquet",
+      "sha256": "67a872f3cb7ed9778a1cd56f89ba20f0d856b1ddaca9232b6f6e1d4636e5a097",
+      "registros": 1465610
+    },
+    {
+      "arquivo": "D:\\Cleber\\GitHub\\Projetos\\observatorio_covid19_brasil\\Camada_Bronze\\dados_mortalidade_sim\\coleta_20261023_103728_a8cccf84\\parquet\\sim_2024.parquet",
+      "sha256": "1aac3cfb70815a11c4464b4dd2a537015d60a20a4a38be35c024baaf5371a308",
+      "registros": 1532015
+    }
+  ],
+  "referencia_ibge": "D:\\Cleber\\GitHub\\Projetos\\observatorio_covid19_brasil\\Camada_Silver\\dados\\populacao_ibge\\20261024_163052_e1db3d2b\\populacao_municipios_2020_2024.parquet",
+  "sha256_ibge": "48a793c5f53a2664729a4a676ea0a1042c23796610b1911595b7c8a782c3b223",
+  "colunas_originais_uniao": 92,
+  "colunas_silver": 112,
+  "colunas_ausentes_por_ano": {
+    "2020": [
+      "cb_alt",
+      "covid_clas",
+      "mat_clas",
+      "opor_do",
+      "tp_altera"
+    ],
+    "2021": [
+      "cb_alt",
+      "covid_clas",
+      "mat_clas",
+      "opor_do",
+      "tp_altera"
+    ],
+    "2022": [
+      "cb_alt",
+      "covid_clas",
+      "mat_clas",
+      "opor_do",
+      "tp_altera"
+    ],
+    "2023": [
+      "covid_clas",
+      "estabdescr",
+      "fontesinf",
+      "mat_clas",
+      "nudiasinf",
+      "nudiasobin"
+    ],
+    "2024": [
+      "estabdescr",
+      "fontesinf",
+      "nudiasinf",
+      "nudiasobin"
+    ]
+  },
+  "chave_tecnica": [
+    "ano_arquivo",
+    "contador"
+  ],
+  "parquet_silver": "D:\\Cleber\\GitHub\\Projetos\\observatorio_covid19_brasil\\Camada_Silver\\dados\\sim\\20261029_023632_bf095088\\sim_2020_2024.parquet",
+  "limites": "Sem deduplicação ou filtro clínico; contador não é identificador permanente. Idade e causas não decodificadas; somente datas de óbito/nascimento derivadas. Vínculos exatos, sem equivalências automáticas.",
+  "chaves_duplicadas": 0
+}
